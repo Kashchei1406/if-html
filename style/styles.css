@@ -1,0 +1,14 @@
+td:first-child::before{
+    content: "<";
+}
+td:first-child::after{
+    content: ">";
+}
+table tr:nth-child(6) td::before{
+    content: none;
+}
+table tr:nth-child(6) td::after {
+    content: none;
+}.form{
+    margin-top: 15px;
+ }
