@@ -4,200 +4,11 @@
     <meta charset="UTF-8" />
     <title>Lesson1</title>
     <link rel="stylesheet" href="style/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
-    <h2>Lesson1</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consequatur
-      dignissimos eaque ipsa libero nobis, numquam porro quos repellendus saepe.
-    </p>
-
-    <h1>My first page</h1>
-    This is my first page, creator:<a href="about/index.html"
-      >Andrei Kashchei</a
-    >
-    <hr />
-    <img src="images/home.gif" alt="Insane" />
-    <div class="list">
-      <ol>
-        <li>Знакомство с Web.</li>
-        <ul>
-          <li>Краткая история Web и что такое интернет.</li>
-          <li>Как устроен браузер и как он получает страницв по сети.</li>
-          <li>Что такое Git?</li>
-          <li>Создание первого репозитория.</li>
-          <li>О файле .gitignore.</li>
-        </ul>
-        <li>HTML-вёрстка - первые шаги.</li>
-        <ul>
-          <li>Настройка рабочей среды.</li>
-          <li>Краткая история HTML</li>
-          <li>Какие бывают теги и что такое атрибут.</li>
-          <li>Теги для работы с текстом.</li>
-          <li>Создание собственной страницы.</li>
-        </ul>
-        <li>Погружение в HTML-разметку.</li>
-        <ul>
-          <li>Мета теги.</li>
-          <li>Мнемоники.</li>
-          <li>Тег для работы с изображением.</li>
-          <li>Тег для работы со списками.</li>
-          <li>Теги для работы с таблицами.</li>
-          <li>Теги для работы с формами.</li>
-          <li>Div-блоки.</li>
-        </ul>
-      </ol>
-    </div>
-
-    <div class="table">
-      <table border="1" width="100%">
-        <tr>
-          <th>Tag</th>
-          <th>Description</th>
-        </tr>
-        <tr>
-          <td>table</td>
-          <td>Defines a table</td>
-        </tr>
-        <tr>
-          <td>tr</td>
-          <td>Defines a row in a table</td>
-        </tr>
-        <tr>
-          <td>th</td>
-          <td rowspan="2">Defines a table caption</td>
-        </tr>
-        <tr>
-          <td>td</td>
-        </tr>
-        <tr>
-          <td colspan="2">Rarely used</td>
-        </tr>
-        <tr>
-          <td>caption</td>
-          <td>Defines a table caption</td>
-        </tr>
-        <tr>
-          <td>thead</td>
-          <td>Groups the header content in a table</td>
-        </tr>
-        <tr>
-          <td>tbody</td>
-          <td>Groups the body content in a table</td>
-        </tr>
-        <tr>
-          <td>tfoot</td>
-          <td>Groups the footer content in a table</td>
-        </tr>
-      </table>
-    </div>
-
-    <div class="form">
-      <form action="/" method="get">
-        <fieldset>
-          <legend>My first form</legend>
-          <p>
-            <label for="name">Name:</label><br />
-            <input
-              id="name"
-              type="text"
-              name="name"
-              placeholder="Name"
-              required
-            />
-          </p>
-          <p>
-            <label for="email">Email:</label><br />
-            <input id="email" type="email" name="email" required />
-          </p>
-          <p>
-            <label for="password">Password:</label><br />
-            <input id="password" type="password" name="password" required />
-          </p>
-          <p>
-            <label for="range">Your programming level:</label><br />
-            <input id="range" type="range" name="range" required />
-          </p>
-          <p>
-            What does HTML stand for?<br />
-            <br />
-            <input
-              id="first answer"
-              type="checkbox"
-              name="first question"
-              value="1"
-            />
-            <label for="first answer">Hyperlink and Text Markup Language</label
-            ><br />
-            <input
-              id="second answer"
-              type="checkbox"
-              name="first question"
-              value="2"
-            />
-            <label for="second answer">Home Tool Markup </label><br />
-            <input
-              id="third answer"
-              type="checkbox"
-              name="first question"
-              value="3"
-            />
-            <label for="third answer">Hyperlink and Text Markup Language</label
-            ><br />
-          </p>
-          <p>
-            What does HTTP stand for?<br />
-            <br />
-            <input
-              id="forth answer"
-              type="checkbox"
-              name="second question"
-              value="1"
-            />
-            <label for="forth answer">Hyper Text Translate Protocol</label
-            ><br />
-            <input
-              id="fifth answer"
-              type="checkbox"
-              name="second question"
-              value="2"
-            />
-            <label for="fifth answer">Hyper Text Transmission Protocol</label
-            ><br />
-            <input
-              id="sixth answer"
-              type="checkbox"
-              name="second question"
-              value="3"
-            />
-            <label for="sixth answer">Hyper Text Transfer Protocol</label><br />
-          </p>
-          <label for="textarea">Comment</label><br />
-          <textarea id="textarea" maxlength="500"></textarea><br />
-          <label for="last question">What does HTML stand for?</label><br />
-          <select id="last question" name="last question">
-            <option value="0" disabled selected>Your answer</option>
-            <option value="1">Hyperlink and Text Markup Language</option>
-            <option value="2">Home Tool Markup</option>
-            <option value="3">Hyperlink and Text Markup Language</option>
-          </select>
-          <p>
-            <button>Send</button>
-          </p>
-        </fieldset>
-      </form>
-    </div>
-
-    <hr />
-    <div class="lesson_4">
-      <div class="wrapper">
-        <div class="container">
+    <div class="wrapper">
+      <div class="header"></div>
+        <div class="container-support">
           <div class="title-container">
             <div class="title">What do we offer</div>
             <div class="line"><span></span></div>
@@ -206,30 +17,63 @@
             <div class="colum">
               <div class="colum-item1 item">
                 <div class="item-image">
-                  <img src="./images/Vector.png" />
+                  <img src="./images/Vector.png" alt="Support 24/7" />
                 </div>
                 <div class="item-text">Support 24/7</div>
               </div>
               <div class="colum-item2 item">
                 <div class="item-image">
-                  <img src="./images/Vector%20(1).png" />
+                  <img src="./images/Vector%20(1).png" alt="Communicate directly" />
                 </div>
                 <div class="item-text">Communicate directly</div>
               </div>
               <div class="colum-item3 item">
                 <div class="item-image">
-                  <img src="./images/Vector%20(2).png" />
+                  <img src="./images/Vector%20(2).png" alt="Book online" />
                 </div>
                 <div class="item-text">Book online</div>
               </div>
               <div class="colum-item4 item">
                 <div class="item-image">
-                  <img src="./images/Vector%20(3).png" />
+                  <img src="./images/Vector%20(3).png" alt="Guest reviews" />
                 </div>
-                <div class="item-text">Real guests reviewers</div>
+                <div class="item-text">Real guest reviews</div>
               </div>
             </div>
           </div>
+      </div>
+      <div class="footer">
+        <div class="footer-container">
+          <div class="footer-about">
+            <ul class="footer-list">
+              <li class="footer-list-caption"><a href=""> About</a></li>
+              <li class="footer-list-item"><a href="">How Triphouse works</a></li>
+              <li class="footer-list-item"><a href="">Careers</a></li>
+              <li class="footer-list-item"><a href="">Privacy</a></li>
+              <li class="footer-list-item"><a href="">Terms</a></li>
+            </ul>
+          </div>
+          <div class="footer-property">
+            <ul class="footer-list">
+              <li class="footer-list-caption"><a href="">Property types</a></li>
+              <li class="footer-list-item"><a href="">Guest houses</a></li>
+              <li class="footer-list-item"><a href="">Hotels</a></li>
+              <li class="footer-list-item"><a href="">Apartments</a></li>
+              <li class="footer-list-item"><a href="">Villas</a></li>
+              <li class="footer-list-item"><a href="">Holiday homes</a></li>
+              <li class="footer-list-item"><a href="">Hostels</a></li>
+            </ul>
+          </div>
+          <div class="footer-support">
+            <ul class="footer-list">
+              <li class="footer-list-caption"><a href="">Support</a></li>
+              <li class="footer-list-item"><a href="">Contact Customer Service</a></li>
+              <li class="footer-list-item"><a href="">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-copy">
+          &copy;2020 Triphouse, Inc. All rights reserved
         </div>
       </div>
     </div>
