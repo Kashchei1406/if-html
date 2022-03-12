@@ -17,14 +17,204 @@
   font-weight: 500;
   font-style: normal;
 }
-.body{
+.body {
   margin: 0;
+  background-color: #f5bd41;
+}
+
+.background {
+  background-color: #e5e5e5;
 }
 
 .wrapper {
   background-color: #e5e5e5;
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header {
+  width: 100%;
+  height: 900px;
+  background-image: url("../images/background-head.png");
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.head-container {
+  max-width: 1232px;
+  width: 100%;
+  height: 890px;
+  margin: 0 auto;
+}
+
+.head-title {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 51px;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+.head-logo {
+  justify-content: start;
+  width: 50%;
+}
+
+.head-nav {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  color: #ffffff;
+  align-items: center;
+}
+
+.head-nav-stays {
+  margin-right: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  padding-bottom: 12px;
+  height: 100%;
+  align-self: auto;
+}
+
+.head-nav-stays a:hover {
+  border-bottom: #f5bd41 solid 4px;
+}
+
+.head-nav-attraction {
+  margin-right: 24px;
+  margin-left: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  padding-bottom: 12px;
+}
+
+.head-nav-attraction a:hover {
+  border-bottom: #f5bd41 solid 4px;
+}
+
+.head-nav-night {
+  margin-right: 12px;
+  margin-left: 24px;
+}
+
+.head-nav-account {
+  margin-left: 12px;
+}
+
+.head-caption h1 {
+  margin-top: 202px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+.head-form {
+  padding-top: 100px;
+  color: #ffffff;
+  width: 100%;
+}
+
+.head-form-container {
+  display: flex;
+}
+
+input {
+  border-color: #ffffff;
+}
+
+.head-form-item input,
+.head-form-item select {
+  height: 60px;
+  margin: 0;
+  padding: 1px 0px;
+  border-radius: 8px;
+}
+
+.head-form-item label {
+  padding: 24px;
+  white-space: nowrap;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.head-form-item input:hover,
+.button button:hover,
+.amount select:hover {
+  border: #f5bd41 solid 2px;
+}
+
+.name-hotel {
+  width: 39%;
+}
+
+.name-hotel input {
+  width: 100%;
+  border-color: #ffffff;
+}
+
+.date {
+  width: 21%;
+}
+
+.date input {
+  width: 100%;
+}
+
+.amount {
+  width: 25%;
+  align-self: end;
+}
+
+.amount select {
+  padding-left: 1px;
+  width: 100%;
+  height: 64px;
+}
+
+.button {
+  align-self: end;
+  width: 15.6%;
+}
+
+.button button {
+  height: 64px;
+  padding-bottom: 10px;
+  width: 100%;
+  background-color: #3077c6;
+  color: #ffffff;
+  border: #3077c6 solid 1px;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.app {
+  margin-top: 129px;
+  display: flex;
+  justify-content: center;
+}
+
+.app-google {
+  margin-right: 8px;
+}
+
+.app-apple {
+  margin-left: 8px;
 }
 
 .container-support {
@@ -39,7 +229,7 @@
   flex-direction: column;
   max-height: 189px;
   width: 100%;
-  margin-top: 120px;
+  padding-top: 120px;
   align-items: center;
 }
 
@@ -165,8 +355,6 @@
 }
 
 .footer a {
-  text-decoration: none;
-  color: #ffffff;
   font-size: 20px;
 }
 

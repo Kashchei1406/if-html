@@ -4,10 +4,75 @@
     <meta charset="UTF-8" />
     <title>Lesson1</title>
     <link rel="stylesheet" href="style/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
-    <div class="wrapper">
-      <div class="header"></div>
+    <div class="background">
+      <div class="wrapper">
+        <div class="header">
+          <div class="head-container">
+            <div class="head">
+              <div class="head-title">
+                <div class="head-logo">
+                  <img src="images/logo_vector.png" alt="Logo" />
+                </div>
+                <div class="head-nav">
+                  <div class="head-nav-stays"><a href="">Stays</a></div>
+                  <div class="head-nav-attraction">
+                    <a href="">Attraction</a>
+                  </div>
+                  <div class="head-nav-night">
+                    <a href=""
+                      ><img src="images/Night.png" alt="day or night"
+                    /></a>
+                  </div>
+                  <div class="head-nav-account">
+                    <a href=""
+                      ><img src="images/AccountCircle.png" alt="account"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="head-content">
+                <div class="head-caption">
+                  <h1>Discover stays<br />to live, work or just relax</h1>
+                </div>
+                <div class="head-form">
+                  <form>
+                    <div class="head-form-container">
+                      <div class="head-form-item name-hotel">
+                        <label for="destination"
+                          >Your destination or hotel name<br /> </label
+                        ><br />
+                        <input id="destination" type="text" placeholder="New York" />
+                      </div>
+                      <div class="head-form-item date">
+                        <label for="date"
+                          >Check&ndash;in &mdash; Check&ndash;out<br /> </label
+                        ><br />
+                        <input id="date" type="date" placeholder="Check-in - Check-out" />
+                      </div>
+                      <div class="head-form-item amount">
+                        <select></select>
+                      </div>
+                      <div class="head-form-item button">
+                        <button>Search</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="app">
+                <div class="app-google">
+                  <a href=""><img src="images/google-play-badge.png" alt="play market logo"></a>
+                </div>
+                <div class="app-apple">
+                  <a href=""><img src="images/apple.png" alt="app store logo"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="container-support">
           <div class="title-container">
             <div class="title">What do we offer</div>
@@ -23,7 +88,10 @@
               </div>
               <div class="colum-item2 item">
                 <div class="item-image">
-                  <img src="./images/Vector%20(1).png" alt="Communicate directly" />
+                  <img
+                    src="./images/Vector%20(1).png"
+                    alt="Communicate directly"
+                  />
                 </div>
                 <div class="item-text">Communicate directly</div>
               </div>
@@ -41,39 +109,46 @@
               </div>
             </div>
           </div>
-      </div>
-      <div class="footer">
-        <div class="footer-container">
-          <div class="footer-about">
-            <ul class="footer-list">
-              <li class="footer-list-caption"><a href=""> About</a></li>
-              <li class="footer-list-item"><a href="">How Triphouse works</a></li>
-              <li class="footer-list-item"><a href="">Careers</a></li>
-              <li class="footer-list-item"><a href="">Privacy</a></li>
-              <li class="footer-list-item"><a href="">Terms</a></li>
-            </ul>
-          </div>
-          <div class="footer-property">
-            <ul class="footer-list">
-              <li class="footer-list-caption"><a href="">Property types</a></li>
-              <li class="footer-list-item"><a href="">Guest houses</a></li>
-              <li class="footer-list-item"><a href="">Hotels</a></li>
-              <li class="footer-list-item"><a href="">Apartments</a></li>
-              <li class="footer-list-item"><a href="">Villas</a></li>
-              <li class="footer-list-item"><a href="">Holiday homes</a></li>
-              <li class="footer-list-item"><a href="">Hostels</a></li>
-            </ul>
-          </div>
-          <div class="footer-support">
-            <ul class="footer-list">
-              <li class="footer-list-caption"><a href="">Support</a></li>
-              <li class="footer-list-item"><a href="">Contact Customer Service</a></li>
-              <li class="footer-list-item"><a href="">FAQ</a></li>
-            </ul>
-          </div>
         </div>
-        <div class="footer-copy">
-          &copy;2020 Triphouse, Inc. All rights reserved
+        <div class="footer">
+          <div class="footer-container">
+            <div class="footer-about">
+              <ul class="footer-list">
+                <li class="footer-list-caption"><a href=""> About</a></li>
+                <li class="footer-list-item">
+                  <a href="">How Triphouse works</a>
+                </li>
+                <li class="footer-list-item"><a href="">Careers</a></li>
+                <li class="footer-list-item"><a href="">Privacy</a></li>
+                <li class="footer-list-item"><a href="">Terms</a></li>
+              </ul>
+            </div>
+            <div class="footer-property">
+              <ul class="footer-list">
+                <li class="footer-list-caption">
+                  <a href="">Property types</a>
+                </li>
+                <li class="footer-list-item"><a href="">Guest houses</a></li>
+                <li class="footer-list-item"><a href="">Hotels</a></li>
+                <li class="footer-list-item"><a href="">Apartments</a></li>
+                <li class="footer-list-item"><a href="">Villas</a></li>
+                <li class="footer-list-item"><a href="">Holiday homes</a></li>
+                <li class="footer-list-item"><a href="">Hostels</a></li>
+              </ul>
+            </div>
+            <div class="footer-support">
+              <ul class="footer-list">
+                <li class="footer-list-caption"><a href="">Support</a></li>
+                <li class="footer-list-item">
+                  <a href="">Contact Customer Service</a>
+                </li>
+                <li class="footer-list-item"><a href="">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-copy">
+            &copy;2020 Triphouse, Inc. All rights reserved
+          </div>
         </div>
       </div>
     </div>
