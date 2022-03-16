@@ -17,14 +17,259 @@
   font-weight: 500;
   font-style: normal;
 }
-.body{
+
+.body {
   margin: 0;
 }
 
 .wrapper {
   background-color: #e5e5e5;
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header {
+  width: 100%;
+  height: 900px;
+  background-image: url("../images/background-head.png");
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head-container {
+  max-width: 1232px;
+  width: 100%;
+  height: 890px;
+  margin: 0 auto;
+}
+
+.head-title {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 51px;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+.head-logo {
+  justify-content: start;
+  width: 50%;
+}
+
+.head-nav {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  color: #ffffff;
+  align-items: center;
+}
+
+.head-nav-stays {
+  margin-right: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  padding-bottom: 12px;
+  height: 100%;
+  align-self: auto;
+}
+
+.head-nav-stays a:hover {
+  border-bottom: #f5bd41 solid 4px;
+}
+
+.head-nav-attraction {
+  margin-right: 24px;
+  margin-left: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  padding-bottom: 12px;
+}
+
+.head-nav-attraction a:hover {
+  border-bottom: #f5bd41 solid 4px;
+}
+
+.head-nav-night {
+  margin-right: 12px;
+  margin-left: 24px;
+}
+
+.head-nav-night svg:hover > path {
+  fill: #f5bd41;
+}
+
+.head-nav-account {
+  margin-left: 12px;
+}
+
+.head-nav-account svg:hover > path {
+  fill: #f5bd41;
+}
+
+.head-caption h1 {
+  margin-top: 202px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+.head-form {
+  padding-top: 100px;
+  color: #ffffff;
+  width: 100%;
+}
+
+.head-form-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.head-form-label-hotel {
+  width: 38%;
+}
+
+.head-form-label-date {
+  width: 61%;
+}
+
+label span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  padding-left: 24px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+.head-input-hotel:hover,
+.head-input-amount:hover {
+  border-color: #f5bd41;
+  border-radius: 8px;
+}
+
+.head-input-container {
+  width: 100%;
+  height: 64px;
+  margin-top: 24px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.head-input-hotel {
+  width: 38%;
+  height: 58px;
+  border: 3px solid #ffffff;
+  border-radius: 8px;
+}
+
+.head-input-hotel input {
+  width: 98%;
+  height: 92%;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+}
+
+input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  padding-left: 24px;
+}
+
+.head-input-date {
+  width: calc(21% + 6px);
+  height: 62px;
+  border: 1px solid #cecece;
+  border-radius: 8px;
+  position: relative;
+}
+
+.head-input-date:hover {
+  border: 3px solid #f5bd41;
+  height: 58px;
+  width: 21%;
+}
+
+input[type="date"] {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  width: 97%;
+  height: 92%;
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  border: none;
+}
+
+.head-input-amount {
+  width: 25%;
+  height: 58px;
+  border: 3px solid #ffffff;
+  border-radius: 8px;
+}
+
+.head-input-amount select {
+  width: 97%;
+  height: 92%;
+  border: 1px solid #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  text-align: center;
+}
+
+.button {
+  background-color: #3077c6;
+  border-radius: 8px;
+  width: 15.6%;
+}
+
+.button button {
+  height: 64px;
+  width: 100%;
+  background-color: #3077c6;
+  color: #ffffff;
+  border: #3077c6 solid 1px;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.app {
+  margin-top: 129px;
+  display: flex;
+  justify-content: center;
+}
+
+.app-google {
+  margin-right: 8px;
+}
+
+.app-apple {
+  margin-left: 8px;
 }
 
 .container-support {
@@ -39,7 +284,7 @@
   flex-direction: column;
   max-height: 189px;
   width: 100%;
-  margin-top: 120px;
+  padding-top: 120px;
   align-items: center;
 }
 
@@ -165,8 +410,6 @@
 }
 
 .footer a {
-  text-decoration: none;
-  color: #ffffff;
   font-size: 20px;
 }
 
