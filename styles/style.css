@@ -1,22 +1,4 @@
-@font-face {
-  font-family: "Roboto";
-  src: url("../font/roboto/Roboto-Regular.eot");
-  src: local("☺"), url("../font/roboto/Roboto-Regular.woff2") format("woff2"),
-    url("../font/roboto/Roboto-Regular.ttf") format("truetype"),
-    url("../font/roboto/Roboto-Regular.svg") format("svg");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../font/roboto/Roboto-Medium.eot");
-  src: local("☺"), url("../font/roboto/Roboto-Medium.woff2") format("woff2"),
-    url("../font/roboto/Roboto-Medium.ttf") format("truetype"),
-    url("../font/roboto/Roboto-Medium.svg") format("svg");
-  font-weight: 500;
-  font-style: normal;
-}
+@import "fonts.css";
 
 * {
   margin: 0;
@@ -79,14 +61,6 @@ header {
   padding: 0 8px;
 }
 
-.colum-container:first-child {
-  margin: 0 0 8px 0;
-}
-
-.colum-container:last-child {
-  margin-right: 0;
-}
-
 .head-title {
   display: flex;
   justify-content: space-between;
@@ -113,7 +87,12 @@ nav {
   align-items: center;
 }
 
-.head-nav-stays {
+nav button {
+  background: none;
+  border: none;
+}
+
+.head-nav-stays button {
   margin-right: 12px;
   font-size: 24px;
   padding-top: 6px;
@@ -121,10 +100,11 @@ nav {
   height: 100%;
   position: relative;
   transition: 0.5s;
+  color: #ffffff;
 }
 
-.head-nav-stays::after,
-.head-nav-attraction::after {
+.head-nav-stays button::after,
+.head-nav-attraction button::after {
   content: "";
   width: 0;
   height: 4px;
@@ -134,15 +114,14 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: 0.5s;
-  transform-origin: left;
 }
 
-.head-nav-stays:hover::after,
-.head-nav-attraction:hover::after {
+.head-nav-stays button:hover::after,
+.head-nav-attraction button:hover::after {
   width: calc(100% - 10%);
 }
 
-.head-nav-attraction {
+.head-nav-attraction button {
   margin-right: 24px;
   margin-left: 12px;
   font-size: 24px;
@@ -150,6 +129,7 @@ nav {
   padding-bottom: 12px;
   position: relative;
   transition: 1s;
+  color: #ffffff;
 }
 
 .head-nav-attraction:hover::after {
@@ -158,8 +138,8 @@ nav {
 
 .head-icon-night {
   padding-top: 5px;
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   fill: #ffffff;
   transition: 0.3s;
 }
@@ -181,8 +161,16 @@ nav {
   fill: #f5bd41;
 }
 
-.head-caption h1 {
+.burger-menu {
+  display: none;
+}
+
+.head-content {
   margin-top: 202px;
+  transition: 0.2s;
+}
+
+.head-caption h1 {
   color: #ffffff;
   font-weight: 500;
   font-size: 50px;
@@ -203,6 +191,14 @@ nav {
   width: 38%;
 }
 
+.head-form-label-hotel svg {
+  display: none;
+}
+
+.head-form-label-hotel label span {
+  white-space: nowrap;
+}
+
 .head-form-label-date {
   width: 61%;
 }
@@ -220,7 +216,6 @@ select:focus {
 .head-input-hotel:hover,
 .head-input-amount:hover {
   border-color: #f5bd41;
-  border-radius: 8px;
 }
 
 .head-input-container {
@@ -242,7 +237,8 @@ select:focus {
 }
 
 .head-input-hotel input {
-  width: 98%;
+  width: calc(98% - 24px);
+  margin-left: 24px;
   height: 92%;
   border: 1px solid #ffffff;
   border-radius: 8px;
@@ -250,7 +246,6 @@ select:focus {
 
 input::placeholder {
   font-size: 18px;
-  padding-left: 24px;
 }
 
 .head-input-date {
@@ -264,18 +259,20 @@ input::placeholder {
 
 .head-input-date:hover {
   border: 3px solid #f5bd41;
-  height: 64px;
-  width: 21%;
 }
 
 input[type="date"] {
   font-size: 18px;
-  width: 97%;
+  width: 48%;
   height: 92%;
   position: absolute;
   top: 1px;
   left: 2px;
   border: none;
+}
+
+.check-out input {
+  margin-left: 50%;
 }
 
 .head-input-amount {
@@ -416,7 +413,6 @@ input[type="date"] {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 0 8px;
 }
 
 .item-text-offer {
@@ -465,11 +461,11 @@ input[type="date"] {
   flex-direction: column;
 }
 
-.column-item:first-child {
+.container .column-item:first-child {
   margin-left: 0;
 }
 
-.column-item:last-child {
+.container .column-item:last-child {
   margin-right: 0;
 }
 
@@ -508,7 +504,7 @@ input[type="date"] {
 .arrow {
   position: absolute;
   top: 35%;
-  left: 100%;
+  left: 99.7%;
   transform: translate(-50%, -50%) rotate(-90deg);
 }
 
@@ -565,7 +561,6 @@ input[type="date"] {
 .best-destination-column {
   display: flex;
   flex-direction: column;
-  margin: 0 8px;
 }
 
 .best-destination-column-image {
@@ -618,6 +613,8 @@ input[type="date"] {
   transform: translate(-50%, -50%);
 }
 
+/* rewrote use preprocessor*/
+/*
 .sign-in {
   width: 100%;
   height: 200px;
@@ -628,46 +625,46 @@ input[type="date"] {
   width: 100%;
   height: 100%;
   background-color: #eaf0f9;
-}
+}*/
 
-.sign-in-margin {
-  margin: 24px;
-  display: flex;
-}
+/*.sign-in-margin {*/
+/*  margin: 24px;*/
+/*  display: flex;*/
+/*}*/
 
-.sign-in-user {
-  align-self: center;
-}
+/*.sign-in-user {*/
+/*  align-self: center;*/
+/*}*/
 
-.sign-in-user svg {
-  height: 86px;
-  width: 86px;
-}
+/*.sign-in-user svg {*/
+/*  height: 86px;*/
+/*  width: 86px;*/
+/*}*/
 
-.sign-in-rows {
-  width: 100%;
-  margin-left: 24px;
-  display: flex;
-  flex-direction: column;
-}
+/*.sign-in-rows {*/
+/*  width: 100%;*/
+/*  margin-left: 24px;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*}*/
 
-.sign-in-esc {
-  align-self: end;
-}
+/*.sign-in-esc {*/
+/*  align-self: end;*/
+/*}*/
 
-.sign-in-esc svg {
-  width: 26px;
-  height: 26px;
-}
+/*.sign-in-esc svg {*/
+/*  width: 26px;*/
+/*  height: 26px;*/
+/*}*/
 
-.sign-in-text {
-  font-size: 24px;
-  font-weight: 500;
-}
+/*.sign-in-text {*/
+/*  font-size: 24px;*/
+/*  font-weight: 500;*/
+/*}*/
 
-.sign-in-btn button {
-  margin-top: 21px;
-}
+/*.sign-in-btn button {*/
+/*  margin-top: 21px;*/
+/*}*/
 
 .guests-reviews {
   height: 1161px;
@@ -839,11 +836,19 @@ input[type="date"] {
   height: 8px;
 }
 
+.slider-ellipse svg:hover {
+  fill: #383838;
+}
+
 .sign-in-mob {
   display: none;
 }
 
 .small-text {
+  display: none;
+}
+
+.head-form-mob {
   display: none;
 }
 
@@ -925,8 +930,155 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  .col-md-12 {
+    width: 100%;
+  }
+
   .col-md-6 {
     width: calc((100% / 12) * 6 - 16px);
+  }
+
+  header {
+    height: 533px;
+  }
+
+  .head-title {
+    padding-top: 12px;
+  }
+
+  .head-content {
+    margin-top: 56px;
+  }
+
+  .head-caption h1 {
+    font-size: 30px;
+  }
+
+  .head-form {
+    padding-top: 32px;
+  }
+
+  .head-form-container {
+    height: 232px;
+    background-color: #f5bd41;
+    position: relative;
+  }
+
+  .head-form-label-date {
+    display: none;
+  }
+
+  .head-input-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8px;
+    background-color: #f5bd41;
+  }
+
+  .head-form-label-hotel {
+    width: 70%;
+    position: absolute;
+    top: 22px;
+    left: 24px;
+    color: #383838;
+    background-color: #ffffff;
+  }
+
+  .head-form-label-hotel svg {
+    width: 16px;
+    height: 16px;
+    display: none;
+  }
+
+  .head-form-label-hotel label span {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .head-input-hotel {
+    height: 48px;
+    width: 100%;
+    margin-bottom: 8px;
+    background-color: #ffffff;
+    border-radius: 4px;
+  }
+
+  input::placeholder {
+    font-size: 12px;
+  }
+
+  .head-input-hotel:hover {
+    z-index: 3;
+  }
+
+  .head-input-date {
+    height: 48px;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    position: static;
+  }
+
+  .head-input-date-item {
+    height: 48px;
+    width: calc(50% - 8px);
+    background-color: #ffffff;
+    border-radius: 4px;
+    position: relative;
+  }
+
+  input[type="date"] {
+    border-radius: 4px;
+    margin-left: 8px;
+    padding-top: 24px;
+    height: 97%;
+    width: 70%;
+  }
+
+  .head-input-date:hover {
+    height: 48px;
+  }
+
+  .head-form-label-hotel svg {
+    position: absolute;
+    display: block;
+    top: 2px;
+    left: -2px;
+  }
+
+  .head-input-date-item label {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    color: #383838;
+    z-index: 2;
+    font-size: 12px;
+  }
+
+  .head-input-amount {
+    background-color: #ffffff;
+    height: 48px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+  }
+
+  .head-input-hotel:hover,
+  .head-input-amount:hover {
+    border: none;
+  }
+
+  .button-head,
+  .button-head .btn {
+    height: 48px;
+    border-radius: 4px;
+    font-size: 19px;
+  }
+
+  .app {
+    margin-top: 32px;
   }
 
   .title-container {
@@ -935,6 +1087,10 @@ footer {
 
   .caption-block {
     margin-top: 24px;
+  }
+
+  .column-item {
+    margin: 0 8px;
   }
 
   .colum-container {
@@ -1010,6 +1166,67 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  .head-logo svg {
+    width: 122px;
+    height: 24px;
+  }
+
+  .head-nav-stays,
+  .head-nav-attraction {
+    display: none;
+  }
+
+  .head-icon-night {
+    height: 21px;
+    width: 21px;
+  }
+
+  .head-nav-account {
+    margin-left: 16px;
+    height: 24px;
+    width: 24px;
+  }
+
+  .head-icon-account {
+    height: 24px;
+    width: 24px;
+  }
+
+  .head-icon-account svg {
+    height: 24px;
+    width: 24px;
+    fill: #10367c;
+  }
+
+  .burger-menu {
+    display: block;
+    width: 24px;
+    height: 16px;
+    margin-left: 20px;
+    position: relative;
+    padding-bottom: 2px;
+  }
+
+  .burger-menu > span,
+  .burger-menu > span::before,
+  .burger-menu > span::after {
+    position: absolute;
+    width: 24px;
+    height: 2.5px;
+    background-color: #ffffff;
+  }
+
+  .burger-menu > span::before {
+    content: "";
+    top: -8px;
+  }
+
+  .burger-menu > span,
+  .burger-menu > span::after {
+    content: "";
+    top: 8px;
+  }
+
   .guests-loves .caption-block,
   .best-destination .caption-block {
     margin-top: 40px;
@@ -1059,13 +1276,19 @@ footer {
     margin-top: 100px;
   }
 
+  .head-content {
+    margin-top: -56px;
+  }
+
   .wrapper {
     min-width: 360px;
     width: 100%;
   }
 
   .container {
+    width: 348px;
     margin: 0 auto;
+    padding: 0;
   }
 
   .offer .colum-container,
@@ -1102,6 +1325,8 @@ footer {
 
   .colum-container {
     justify-content: center;
+    width: 346px;
+    padding: 0 8px;
   }
 
   .item-offer {
@@ -1162,7 +1387,7 @@ footer {
   }
 
   .arrow-best-destination {
-    left: 93%;
+    left: 92%;
   }
 
   .arrow,
